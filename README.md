@@ -1,5 +1,5 @@
 <h1>Automação Mobile<h1>
-<h4 >Repositório criado com o intuito de disponibilizar o estudo feito sobre as funcionalidades do App CTappium utilizando o Appium<h4> 
+<h4 >Repositório criado com o intuito de disponibilizar o estudo feito sobre as funcionalidades do App CTappium, juntamente com a utilização do Appium Desktop<h4> 
 
 <h2>Validação<h2>
 
