@@ -13,4 +13,4 @@
 
 <h5>2- No diretório resources consta o aplicativo utilizado.<h5>
 
-<h5>3- O arquivo ExecuçãoScriptFormulario.mp4 consta a evidência do teste feito para a validação dos registros salvos no formulario.<h5>
+<h5>3- O arquivo CTappium.mp4 consta a evidência do teste feito para a validação dos registros salvos no formulario.<h5>
