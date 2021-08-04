@@ -38,28 +38,28 @@ formatter.match({
   "location": "StepDefinition.Que_eu_esteja_acessando_a_tela_do_formulario()"
 });
 formatter.result({
-  "duration": 887425400,
+  "duration": 1005597700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.Preencher_todos_os_registros()"
 });
 formatter.result({
-  "duration": 15329193800,
+  "duration": 22779546600,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.Em_seguida_salvar_o_registro()"
 });
 formatter.result({
-  "duration": 1230511500,
+  "duration": 1472267900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.Os_dados_serão_salvos_conforme_preenchido()"
 });
 formatter.result({
-  "duration": 3652188900,
+  "duration": 5099938300,
   "status": "passed"
 });
 });
