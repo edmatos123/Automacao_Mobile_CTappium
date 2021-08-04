@@ -38,26 +38,28 @@ formatter.match({
   "location": "StepDefinition.Que_eu_esteja_acessando_a_tela_do_formulario()"
 });
 formatter.result({
-  "duration": 124205000,
-  "error_message": "java.lang.NullPointerException\r\n\tat FormularioTest.StepDefinition.Que_eu_esteja_acessando_a_tela_do_formulario(StepDefinition.java:36)\r\n\tat ✽.Given Que eu esteja acessando a tela do formulario(FormularioTest\\Caso1.feature:4)\r\n",
-  "status": "failed"
+  "duration": 1582024700,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.Preencher_todos_os_registros()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18724876400,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.Em_seguida_salvar_o_registro()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1128422000,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.Os_dados_serão_salvos_conforme_preenchido()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4211319000,
+  "status": "passed"
 });
 });

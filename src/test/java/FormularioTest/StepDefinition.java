@@ -2,12 +2,11 @@ package FormularioTest;
 
 import java.net.MalformedURLException;
 
-import org.junit.Before;
-
 import Formulario.FormularioPage;
-import Formulario.MainPage;
+import Formulario.MenuPage;
 import RecursosAppium.Conector;
 import cucumber.annotation.After;
+import cucumber.annotation.Before;
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
@@ -17,22 +16,22 @@ import io.appium.java_client.android.AndroidDriver;
 public class StepDefinition {
   
 	private AndroidDriver<MobileElement> driver;
-	private MainPage main = null;
+	private MenuPage menu ;
 	private FormularioPage form;
 	
-	
-	@Before
-	public void iniciar() throws Exception {
-		//con = new Conector();
+
+   @Before
+	public void Iniciar() throws MalformedURLException{
 		driver = Conector.getConectar();
-		main = new MainPage(driver);
+		menu = new MenuPage(driver);
 		form = new FormularioPage(driver);
 	}
-	
 
 	@Given("^Que eu esteja acessando a tela do formulario$")
-	public void Que_eu_esteja_acessando_a_tela_do_formulario() {
-		main.clicarMenu("Formulário");		    
+	public void Que_eu_esteja_acessando_a_tela_do_formulario() throws MalformedURLException {
+		
+		
+		menu.clicarMenu("Formulário");		    
 	}
 
 	@When("^Preencher todos os registros$")
