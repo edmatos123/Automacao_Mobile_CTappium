@@ -1,65 +1,53 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('FormularioTest\Caso1.feature');
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('CliqueTest\Validar Clique.feature');
 formatter.feature({
   "line": 1,
-  "name": "Validar Formulario",
+  "name": "Validar Clique",
   "description": "",
-  "id": "validar-formulario",
+  "id": "validar-clique",
   "keyword": "Feature"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Validar Formulario",
+  "name": "Validar Clique Longo",
   "description": "",
-  "id": "validar-formulario;validar-formulario",
+  "id": "validar-clique;validar-clique-longo",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
   "line": 4,
-  "name": "Que eu esteja acessando a tela do formulario",
+  "name": "Que eu esteja acessando a tela de clique",
   "keyword": "Given "
 });
 formatter.step({
   "line": 5,
-  "name": "Preencher todos os registros",
+  "name": "Efetuar o clique longo",
   "keyword": "When "
 });
 formatter.step({
   "line": 6,
-  "name": "Em seguida salvar o registro",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "Os dados serão salvos conforme preenchido",
+  "name": "Exibira o texto Clique Longo",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinition.Que_eu_esteja_acessando_a_tela_do_formulario()"
+  "location": "StepDefinition.Que_eu_esteja_acessando_a_tela_de_clique()"
 });
 formatter.result({
-  "duration": 1005597700,
+  "duration": 1054344500,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.Preencher_todos_os_registros()"
+  "location": "StepDefinition.Efetuar_o_clique_longo()"
 });
 formatter.result({
-  "duration": 22779546600,
+  "duration": 2678053100,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.Em_seguida_salvar_o_registro()"
+  "location": "StepDefinition.Exibira_o_texto_Clique_Longo()"
 });
 formatter.result({
-  "duration": 1472267900,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.Os_dados_serão_salvos_conforme_preenchido()"
-});
-formatter.result({
-  "duration": 5099938300,
+  "duration": 204086800,
   "status": "passed"
 });
 });
