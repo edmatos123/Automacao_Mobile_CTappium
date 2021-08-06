@@ -7,6 +7,7 @@ import cucumber.junit. Cucumber ;
 @Cucumber.Options( 
 		monochrome = true,
 	   format = {"pretty", "html:target/Destination"},
+	   tags = {"@Teste1"},
        features = {"FormularioTest"},
 	   glue = {"FormularioTest"}   
  ) 

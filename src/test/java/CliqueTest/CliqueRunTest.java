@@ -8,6 +8,7 @@ import cucumber.junit.Cucumber;
 @Cucumber.Options(
 				monochrome = true,
 			   format = {"pretty", "html:target/Destination"},
+			   tags = {"@cliqueduplo"},
 		       features = {"CliqueTest"},
 			   glue = {"CliqueTest"} 
 )

@@ -38,11 +38,26 @@ public class StepDefinition {
 	
 		clique.clicarLongo();
 	}
+	
+	@When("^Efetuar o clique duplo$")
+	public void Efetuar_o_clique_duplo() {
+
+		clique.clicarDuplo();
+	}
+
 
 	@Then("^Exibira o texto Clique Longo$")
 	public void Exibira_o_texto_Clique_Longo() {
 	  
-		clique.validarTexto();
+		clique.validarTexto("Clique Longo");
 	}
+	
+
+	@Then("^Exibira o texto Duplo Clique")
+	public void Exibira_o_texto_Duplo_Clique() {
+
+		clique.validarTexto("Duplo Clique");
+	}
+
 	
 }

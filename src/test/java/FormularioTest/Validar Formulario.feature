@@ -1,5 +1,6 @@
 Feature: Validar Formulario
 
+@Teste1
    Scenario: Validar Formulario
 	   Given Que eu esteja acessando a tela do formulario
         When Preencher todos os registros 
