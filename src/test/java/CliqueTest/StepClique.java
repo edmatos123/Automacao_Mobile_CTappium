@@ -13,7 +13,7 @@ import cucumber.annotation.nl.Gegeven;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
-public class StepDefinition {
+public class StepClique {
 	
 	private AndroidDriver<MobileElement> driver;
 	private CliquePage clique;

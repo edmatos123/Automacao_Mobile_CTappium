@@ -13,7 +13,7 @@ import cucumber.annotation.en.When;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
-public class StepDefinition {
+public class StepFormulario {
   
 	private AndroidDriver<MobileElement> driver;
 	private MenuPage menu ;
