@@ -47,8 +47,7 @@ public class StepDefinition {
 
 	@Then("^Exibira o texto Clique Longo$")
 	public void Exibira_o_texto_Clique_Longo() {
-	  
-		clique.validarTexto("Clique Longo");
+	  		clique.validarTexto("Clique Longo");
 	}
 	
 
