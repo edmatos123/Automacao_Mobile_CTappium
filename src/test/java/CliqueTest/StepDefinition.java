@@ -41,7 +41,6 @@ public class StepDefinition {
 	
 	@When("^Efetuar o clique duplo$")
 	public void Efetuar_o_clique_duplo() {
-
 		clique.clicarDuplo();
 	}
 
