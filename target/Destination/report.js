@@ -1,71 +1,59 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('FormularioTest\Validar Formulario.feature');
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri('CliqueTest\Validar Clique.feature');
 formatter.feature({
   "line": 1,
-  "name": "Validar Formulario",
+  "name": "Validar Clique",
   "description": "",
-  "id": "validar-formulario",
+  "id": "validar-clique",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 4,
-  "name": "Validar Formulario",
+  "line": 16,
+  "name": "Validar Duplo Clique Lento",
   "description": "",
-  "id": "validar-formulario;validar-formulario",
+  "id": "validar-clique;validar-duplo-clique-lento",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 3,
-      "name": "@Teste1"
+      "line": 15,
+      "name": "@cliqueduplolento"
     }
   ]
 });
 formatter.step({
-  "line": 5,
-  "name": "Que eu esteja acessando a tela do formulario",
+  "line": 17,
+  "name": "Que eu esteja acessando a tela de clique",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 6,
-  "name": "Preencher todos os registros",
+  "line": 18,
+  "name": "Efetuar o clique duplo lento",
   "keyword": "When "
 });
 formatter.step({
-  "line": 7,
-  "name": "Em seguida salvar o registro",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 8,
-  "name": "Os dados serão salvos conforme preenchido",
+  "line": 19,
+  "name": "Exibira o texto Duplo Clique Lento",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepDefinition.Que_eu_esteja_acessando_a_tela_do_formulario()"
+  "location": "StepClique.Que_eu_esteja_acessando_a_tela_de_clique()"
 });
 formatter.result({
-  "duration": 2684724800,
+  "duration": 986644799,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.Preencher_todos_os_registros()"
+  "location": "StepClique.Efetuar_o_clique_duplo_lento()"
 });
 formatter.result({
-  "duration": 20565289600,
+  "duration": 4778012000,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepDefinition.Em_seguida_salvar_o_registro()"
+  "location": "StepClique.Exibira_o_texto_Duplo_Clique_Lento()"
 });
 formatter.result({
-  "duration": 1191020100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepDefinition.Os_dados_serão_salvos_conforme_preenchido()"
-});
-formatter.result({
-  "duration": 3837382100,
+  "duration": 235657300,
   "status": "passed"
 });
 });

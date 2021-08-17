@@ -1,6 +1,6 @@
 Feature: Validar Clique
 
-    @cliquelongo
+   @cliquelongo
    Scenario: Validar Clique Longo
 	   Given Que eu esteja acessando a tela de clique
         When Efetuar o clique longo
@@ -12,4 +12,8 @@ Feature: Validar Clique
         When Efetuar o clique duplo
 		Then Exibira o texto Duplo Clique
 		
-		
+   @cliqueduplolento
+   Scenario: Validar Duplo Clique Lento
+	   Given Que eu esteja acessando a tela de clique
+        When Efetuar o clique duplo lento
+		Then Exibira o texto Duplo Clique Lento	

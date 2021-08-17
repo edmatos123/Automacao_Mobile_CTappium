@@ -24,7 +24,7 @@ public class CliquePage {
 }
 	
 	public void clicarLongo() throws MalformedURLException {
-		
+		uti.waitElementVisible(30, By.xpath("//android.widget.TextView[@text = 'Clique Longo']"));
 		
 		new TouchAction(Conector.getConectar()).longPress(driver.findElement(By.xpath("//android.widget.TextView[@text = 'Clique Longo']"))).perform();
 
@@ -36,6 +36,15 @@ public class CliquePage {
 		
 		driver.findElement(By.xpath("//android.widget.TextView[@text = 'Clique duplo']")).click();
 		driver.findElement(By.xpath("//android.widget.TextView[@text = 'Clique duplo']")).click();
+	}
+	
+	public void clicarDuploLento() throws MalformedURLException {
+		uti.waitElementVisible(30, By.xpath("//android.widget.TextView[@text = 'Clique duplo lento']"));
+
+		
+		new TouchAction(Conector.getConectar()).longPress(driver.findElement(By.xpath("//android.widget.TextView[@text = 'Clique duplo lento']"))).perform();
+		new TouchAction(Conector.getConectar()).longPress(driver.findElement(By.xpath("//android.widget.TextView[@text = 'Clique duplo lento']"))).perform();
+
 	}
 	
 

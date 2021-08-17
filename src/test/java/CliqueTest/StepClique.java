@@ -43,6 +43,11 @@ public class StepClique {
 	public void Efetuar_o_clique_duplo() {
 		clique.clicarDuplo();
 	}
+	
+	@When("^Efetuar o clique duplo lento$")
+	public void Efetuar_o_clique_duplo_lento() throws MalformedURLException {
+		clique.clicarDuploLento();
+	}
 
 
 	@Then("^Exibira o texto Clique Longo$")
@@ -56,6 +61,12 @@ public class StepClique {
 
 		clique.validarTexto("Duplo Clique");
 	}
-
 	
+	@Then("^Exibira o texto Duplo Clique Lento")
+	public void Exibira_o_texto_Duplo_Clique_Lento() {
+
+		clique.validarTexto("Duplo Clique lento");
+	}
+	
+			
 }
