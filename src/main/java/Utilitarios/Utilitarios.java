@@ -1,6 +1,7 @@
 package Utilitarios;
 
 import java.net.MalformedURLException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -30,9 +31,17 @@ public class Utilitarios {
 			new TouchAction(Conector.getConectar()).tap(x,y).perform();		
 	
 	   }
+	   
+	   public void swipeLado(int x_inicial, int x_final, int y) throws MalformedURLException {
+		   
+		   new TouchAction(Conector.getConectar())
+			.press(x_inicial, y)
+			.waitAction(Duration.ofMillis(500))
+			.moveTo(x_final, y)
+			.release()
+			.perform();
+	   }
 	
-	
-	
-	
+		
 
 }

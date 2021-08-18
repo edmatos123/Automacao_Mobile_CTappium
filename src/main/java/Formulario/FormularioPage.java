@@ -61,18 +61,14 @@ public class FormularioPage {
 	public void clicarSeekBar(double posicao) throws MalformedURLException {
 		
 		//Identificar o SeekBar
-		MobileElement seek = Conector.getConectar().findElement(MobileBy.AccessibilityId("slid"));
+		MobileElement seek = driver.findElement(MobileBy.AccessibilityId("slid"));
 		
 		int y = seek.getLocation().y + 16;   //(seek.getSize().height / 2);
 		int x = (int) ((1020 * posicao) / 100);
 		
 		util.tap(x,y);
 		
-	}
-	
-		
-	
-	
+	}	
 	
 	public void clicarCheck() throws MalformedURLException {
 		
