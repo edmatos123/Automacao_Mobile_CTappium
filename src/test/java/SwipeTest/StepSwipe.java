@@ -36,11 +36,16 @@ public class StepSwipe {
 	@When("^Efetuar o Swipe para a direita até o final$")
 	public void Efetuar_o_Swipe_para_a_direita_até_o_final() throws MalformedURLException, InterruptedException {
 		swipe.efetuarSwipe(90, 8);
+		swipe.efetuarSwipe(90, 8);		
 	}
 
 	@Then("^Devera ser validada a informacao apresentada$")
 	public void Devera_ser_validada_a_informacao_apresentada() {
 	    
+	swipe.validarTexto("Chegar até o fim!");	
+		
+		
+		
 	}
 
 	

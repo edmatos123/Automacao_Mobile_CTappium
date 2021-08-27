@@ -4,13 +4,13 @@ package Swipe;
 import java.net.MalformedURLException;
 import java.time.Duration;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 
 import RecursosAppium.Conector;
 import Utilitarios.Utilitarios;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 
 public class SwipePage {
@@ -38,6 +38,12 @@ public class SwipePage {
 		
 		uti.swipeLado(x_inicial, x_final, y);
 		
+		
+	}
+	
+	public void validarTexto (String texto) {
+		
+		Assert.assertEquals(driver.findElement(By.xpath("//android.widget.TextView[@text = 'Chegar até o fim!']")).getText(), texto);
 		
 	}
 

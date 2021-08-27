@@ -15,10 +15,12 @@ import io.appium.java_client.android.AndroidDriver;
 public class Utilitarios {
 	
 	AndroidDriver<MobileElement> driver;
+
 	
 	
 	public Utilitarios(AndroidDriver<MobileElement> driver) {		
 		this.driver = driver;
+	
 	}
 	
 	  public void waitElementVisible(int temp, By by) {
@@ -41,6 +43,9 @@ public class Utilitarios {
 			.release()
 			.perform();
 	   }
+	   
+	  
+	   
 	
 		
 
