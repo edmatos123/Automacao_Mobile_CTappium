@@ -8,11 +8,12 @@
 
 <h4>Clique<h4>
 <h5>Validar as interações feitas por meio da ação de clicar(Clique simples, Clique Longo).<h5>
-<h5><font color="#000099">Obs.: Novas validações serão incluidas futuramente.</font><h5>	
+
   
 <h4>Swipe<h4>
 <h5>Validar as interações feitas por meio da ação do Swipe.<h5> 
-  
+
+ <h5><font color="#000099">Obs.: Novas validações serão incluidas futuramente.</font><h5>	
 
 <h2>Arquivos e Pastas<h2>	
 
